@@ -11,7 +11,9 @@ import {
 import BookingModal from "../components/BookingModal";
 
 export default function TarievenPage() {
-    const [selectedTreatment, setSelectedTreatment] = useState<string | null>(null);
+  const [selectedTreatment, setSelectedTreatment] = useState<string | null>(null);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <main className="bg-[#FCFAF8] text-[#6F745C] min-h-screen overflow-x-hidden">
 
@@ -20,6 +22,7 @@ export default function TarievenPage() {
 
         <div className="max-w-7xl mx-auto flex items-center justify-between">
 
+          {/* LOGO */}
           <a
             href="/"
             className="flex items-center gap-3"
@@ -36,9 +39,19 @@ export default function TarievenPage() {
             >
               Petra Pedicure
             </span>
-
           </a>
 
+          {/* MOBILE BUTTON */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden text-[#6F745C]"
+          >
+            <span className="text-4xl leading-none">
+              {menuOpen ? "✕" : "☰"}
+            </span>
+          </button>
+
+          {/* DESKTOP MENU */}
           <div className="hidden md:flex items-center gap-8 text-sm uppercase tracking-[0.15em] text-[#7F7F72]">
 
             <a href="/" className="hover:text-[#C1978D] transition">
@@ -66,6 +79,69 @@ export default function TarievenPage() {
         </div>
 
       </nav>
+
+      {/* MOBILE MENU */}
+      {menuOpen && (
+        <>
+          {/* OVERLAY */}
+          <div
+            onClick={() => setMenuOpen(false)}
+            className="fixed inset-0 bg-black/20 backdrop-blur-sm z-[9998]"
+          />
+
+          {/* MENU */}
+          <div
+            className="
+            md:hidden
+            fixed
+            top-[95px]
+            left-1/2
+            -translate-x-1/2
+            w-[92%]
+            bg-[#FCFAF8]/95
+            backdrop-blur-xl
+            border border-[#ECE6DF]
+            rounded-[2.7rem]
+            shadow-[0_25px_70px_rgba(0,0,0,0.08)]
+            z-[9999]
+            px-8
+            py-8
+            "
+          >
+
+            {/* NAV LINKS */}
+            <div className="flex flex-col">
+
+              {[
+                ["Home", "/"],
+                ["Behandelingen", "/behandelingen"],
+                ["Tarieven", "/tarieven"],
+                ["Over", "/over"],
+                ["Contact", "/contact"],
+              ].map(([title, link], index) => (
+                <a
+                  key={index}
+                  href={link as string}
+                  onClick={() => setMenuOpen(false)}
+                  className="
+                  py-7
+                  border-b
+                  border-[#EEE8E1]
+                  uppercase
+                  tracking-[0.22em]
+                  text-[15px]
+                  text-[#7F7F72]
+                  "
+                >
+                  {title}
+                </a>
+              ))}
+
+            </div>
+
+          </div>
+        </>
+      )}
 
       {/* CONTENT */}
       <section className="pt-[160px] pb-24 px-6 lg:px-20">
@@ -139,12 +215,12 @@ export default function TarievenPage() {
 
               </div>
 
-<button
-  onClick={() => setSelectedTreatment("Pedicure Basis")}
-  className="w-full bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white py-4 rounded-full text-lg shadow-md text-center block"
->
-  Maak afspraak
-</button>
+              <button
+                onClick={() => setSelectedTreatment("Pedicure Basis")}
+                className="w-full bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white py-4 rounded-full text-lg shadow-md text-center block"
+              >
+                Maak afspraak
+              </button>
 
             </div>
 
@@ -198,65 +274,12 @@ export default function TarievenPage() {
 
               </div>
 
-<button
-  onClick={() => setSelectedTreatment("Pedicure Deluxe")}
-  className="w-full bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white py-4 rounded-full text-lg shadow-md text-center block"
->
-  Maak afspraak
-</button>
-
-            </div>
-
-          </div>
-
-          {/* DEELBEHANDELINGEN */}
-          <div className="mt-14 bg-white rounded-[2.5rem] border border-[#EEE8E1] p-10 lg:p-14 shadow-sm">
-
-            <div className="text-center mb-10">
-
-              <p className="uppercase tracking-[0.25em] text-sm text-[#C1978D] mb-4">
-                Aanvullende behandelingen
-              </p>
-
-              <h3 className="text-4xl font-light text-[#6F745C]">
-                Specifieke deelbehandelingen
-              </h3>
-
-            </div>
-
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-
-              {[
-                ["Likdoorn verwijderen", "€25"],
-                ["Ingroeiende nagel behandelen", "€25"],
-                ["Kloof behandelen", "€25"],
-                ["Eelt verwijderen", "€25"],
-                ["Onderbeen & voetmassage", "€20"],
-                ["Meerprijs per 15 minuten", "€20"],
-              ].map(([title, price], index) => (
-
-                <div
-                  key={index}
-                  className="bg-[#FCFAF8] rounded-2xl border border-[#EEE8E1] px-6 py-5 flex items-center justify-between shadow-sm"
-                >
-
-                  <div className="flex items-center gap-4">
-
-                    <div className="min-w-[12px] min-h-[12px] rounded-full bg-[#D9B0A7] flex-shrink-0"></div>
-
-                    <span className="text-lg text-[#7F7F72]">
-                      {title}
-                    </span>
-
-                  </div>
-
-                  <span className="text-[#C1978D] text-xl font-light">
-                    {price}
-                  </span>
-
-                </div>
-
-              ))}
+              <button
+                onClick={() => setSelectedTreatment("Pedicure Deluxe")}
+                className="w-full bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white py-4 rounded-full text-lg shadow-md text-center block"
+              >
+                Maak afspraak
+              </button>
 
             </div>
 

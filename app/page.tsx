@@ -6,6 +6,8 @@ import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
+  FaPhoneAlt,
+  FaEnvelope,
 } from "react-icons/fa";
 
 export default function Home() {
@@ -59,19 +61,19 @@ export default function Home() {
               Home
             </a>
 
-            <a href="#behandelingen" className="hover:text-[#C1978D] transition">
+            <a href="/behandelingen" className="hover:text-[#C1978D] transition">
               Behandelingen
             </a>
 
-            <a href="#tarieven" className="hover:text-[#C1978D] transition">
+            <a href="/tarieven" className="hover:text-[#C1978D] transition">
               Tarieven
             </a>
 
-            <a href="#over" className="hover:text-[#C1978D] transition">
+            <a href="/over" className="hover:text-[#C1978D] transition">
               Over
             </a>
 
-            <a href="#contact" className="hover:text-[#C1978D] transition">
+            <a href="/contact" className="hover:text-[#C1978D] transition">
               Contact
             </a>
 
@@ -109,49 +111,47 @@ export default function Home() {
       "
     >
 
-      {/* NAV LINKS */}
-      <div className="flex flex-col">
+{/* NAV LINKS */}
+<div className="flex flex-col">
+  {([
+    ["Behandelingen", "/behandelingen"],
+    ["Tarieven", "/tarieven"],
+    ["Over", "/over"],
+    ["Contact", "/contact"],
+  ].map(([title, link], index) => (
+    <a
+      key={index}
+      href={link}
+      onClick={() => setMenuOpen(false)}
+      className="
+      py-7
+      border-b
+      border-[#EEE8E1]
+      uppercase
+      tracking-[0.22em]
+      text-[15px]
+      text-[#7F7F72]
+      "
+    >
+      {title}
+    </a>
+  ))) as React.ReactNode}
+</div>
 
-        {[
-          ["Behandelingen", "#behandelingen"],
-          ["Tarieven", "#tarieven"],
-          ["Over", "#over"],
-          ["Contact", "#contact"],
-        ].map(([title, link], index) => (
-          <a
-            key={index}
-            href={link}
-            onClick={() => setMenuOpen(false)}
-            className="
-            py-7
-            border-b
-            border-[#EEE8E1]
-            uppercase
-            tracking-[0.22em]
-            text-[15px]
-            text-[#7F7F72]
-            "
-          >
-            {title}
-          </a>
-        ))}
+{/* CONTACT INFO */}
+<div className="mt-10 flex flex-col items-center gap-5 text-[#AEB49A]">
 
-      </div>
+  <div className="flex items-center gap-4 text-[18px]">
+    <FaPhoneAlt className="text-[#C1978D] text-xl" />
+    <span>06 12 34 56 78</span>
+  </div>
 
-      {/* CONTACT INFO */}
-      <div className="mt-10 flex flex-col items-center gap-5 text-[#AEB49A]">
+  <div className="flex items-center gap-4 text-[18px]">
+    <FaEnvelope className="text-[#C1978D] text-xl" />
+    <span>info@petrapedicure.nl</span>
+  </div>
 
-        <div className="flex items-center gap-4 text-[18px]">
-          <span className="text-2xl">📞</span>
-          <span>06 12 34 56 78</span>
-        </div>
-
-        <div className="flex items-center gap-4 text-[18px]">
-          <span className="text-2xl">✉️</span>
-          <span>info@petrapedicure.nl</span>
-        </div>
-
-      </div>
+</div>
 
       {/* SUBTITLE */}
       <p
@@ -238,14 +238,14 @@ export default function Home() {
             <div className="mt-10 flex flex-col sm:flex-row gap-4 max-w-xl">
 
               <a
-                href="#contact"
+                href="/contact"
                 className="flex-1 flex items-center justify-center text-center bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white px-4 py-4 rounded-full text-lg min-h-[68px] shadow-lg"
               >
                 Maak een afspraak
               </a>
 
               <a
-                href="#behandelingen"
+                href="/behandelingen"
                 className="flex-1 flex items-center justify-center text-center border border-[#AEB49A] px-4 py-4 rounded-full text-lg hover:bg-[#EEF0E7] transition min-h-[68px]"
               >
                 Bekijk behandelingen
@@ -593,34 +593,34 @@ export default function Home() {
 
       </div>
 
-      {/* CARDS */}
-      <div className="grid sm:grid-cols-2 gap-6 mt-12">
+{/* CARDS */}
+<div className="grid sm:grid-cols-2 gap-6 mt-12">
 
-        <div className="bg-white rounded-[2rem] p-6 border border-[#EEE8E1] shadow-sm">
+  <div className="bg-white rounded-[2rem] p-6 border border-[#EEE8E1] shadow-sm">
 
-          <h3 className="text-3xl text-[#C1978D] mb-3">
-            Sinds 2019
-          </h3>
+    <h3 className="text-3xl text-[#C1978D] mb-3">
+      Sinds 2019
+    </h3>
 
-          <p className="text-[#7F7F72] leading-7">
-            Gediplomeerd pedicure met ervaring in professionele voetverzorging.
-          </p>
+    <p className="text-[#7F7F72] leading-7">
+      Gediplomeerd pedicure met ervaring in professionele voetverzorging.
+    </p>
 
-        </div>
+  </div>
 
-        <div className="bg-white rounded-[2rem] p-6 border border-[#EEE8E1] shadow-sm">
+  <div className="bg-white rounded-[2rem] p-6 border border-[#EEE8E1] shadow-sm">
 
-          <h3 className="text-3xl text-[#C1978D] mb-3">
-            Wellness
-          </h3>
+    <h3 className="text-3xl text-[#C1978D] mb-3">
+      Wellness
+    </h3>
 
-          <p className="text-[#7F7F72] leading-7">
-            Ervaring in ontspanningsmassages en wellnessbehandelingen.
-          </p>
+    <p className="text-[#7F7F72] leading-7">
+      Ervaring in ontspanningsmassages en wellnessbehandelingen.
+    </p>
 
-        </div>
+  </div>
 
-      </div>
+</div>
 
       {/* EXTRA */}
       <div className="mt-12 space-y-6 text-lg leading-9 text-[#7F7F72]">
