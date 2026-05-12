@@ -152,11 +152,11 @@ export default function Home() {
       )}
 
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center px-6 lg:px-20 pt-[130px] pb-20 overflow-x-hidden bg-gradient-to-br from-[#F7F4F1] via-[#FCFAF8] to-[#EEF0E7]">
+      <section className="relative min-h-[85vh] flex items-center px-6 lg:px-20 pt-[130px] pb-20 overflow-x-hidden bg-gradient-to-br from-[#F7F4F1] via-[#FCFAF8] to-[#EEF0E7]">
 
-        <div className="absolute top-[-120px] left-[-120px] w-[320px] h-[320px] bg-[#E7C7BF] opacity-30 blur-[120px] rounded-full"></div>
+        <div className="absolute top-[-120px] left-[-120px] w-[320px] h-[320px] bg-[#E7C7BF] opacity-30 blur-[50px] rounded-full"></div>
 
-        <div className="absolute bottom-[-120px] right-[-120px] w-[320px] h-[320px] bg-[#DDE3D0] opacity-40 blur-[120px] rounded-full"></div>
+        <div className="absolute bottom-[-120px] right-[-120px] w-[320px] h-[320px] bg-[#DDE3D0] opacity-40 blur-[50px] rounded-full"></div>
 
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center w-full">
 
@@ -198,7 +198,7 @@ export default function Home() {
           {/* IMAGE */}
           <div className="relative flex justify-center">
 
-            <div className="backdrop-blur-xl bg-white/70 p-8 rounded-[2.5rem] shadow-2xl border border-[#E8E2DC]">
+            <div className="bg-white/70 p-8 rounded-[2.5rem] shadow-2xl border border-[#E8E2DC]">
 
               <img
                 src="/logo.jpg"
