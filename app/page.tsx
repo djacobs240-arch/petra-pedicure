@@ -1186,7 +1186,6 @@ Met vriendelijke groet,`
   </div>
 )}
 
-```tsx
 {/* FOOTER */}
 <footer className="border-t border-[#E5DDD5] bg-[#FCFAF8] py-14 px-6 lg:px-20">
 
