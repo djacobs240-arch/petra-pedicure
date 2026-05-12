@@ -187,83 +187,173 @@ export default function ContactPage() {
 
           </div>
 
-          {/* CONTACT OPTIONS */}
-          <div className="grid md:grid-cols-3 gap-6">
+{/* CONTACT OPTIONS */}
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 place-items-center">
 
-            {/* PHONE */}
-            <a
-              href="tel:+31612345678"
-              className="bg-white/10 border border-white/20 rounded-[2rem] p-8 text-center hover:bg-white/15 transition duration-300"
-            >
+  {/* PHONE */}
+  <a
+    href="tel:+31612345678"
+    className="
+    w-full
+    max-w-[360px]
+    bg-white/10
+    border
+    border-white/20
+    rounded-[2.5rem]
+    p-8
+    text-center
+    backdrop-blur-md
+    hover:bg-white/15
+    hover:-translate-y-1
+    transition
+    duration-300
+    "
+  >
 
-              <div className="w-16 h-16 mx-auto rounded-full bg-white/15 flex items-center justify-center text-2xl mb-6">
-                <FaPhoneAlt />
-              </div>
+    <div className="w-20 h-20 mx-auto rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-3xl mb-7">
+      <FaPhoneAlt />
+    </div>
 
-              <h3 className="text-2xl font-light mb-3">
-                Bel direct
-              </h3>
+    <h3 className="text-3xl font-light mb-4">
+      Bel direct
+    </h3>
 
-              <p className="text-white/80 leading-7 mb-6">
-                Neem telefonisch contact op voor vragen of afspraken.
-              </p>
+    <p className="text-white/80 leading-8 mb-8">
+      Neem telefonisch contact op voor vragen of afspraken.
+    </p>
 
-              <span className="inline-block bg-white text-[#6F745C] px-6 py-3 rounded-full text-lg hover:scale-105 transition">
-                +31 6 12345678
-              </span>
+    <div
+      className="
+      inline-flex
+      items-center
+      justify-center
+      px-7
+      py-3
+      rounded-full
+      border
+      border-white/30
+      bg-white/10
+      text-white
+      text-lg
+      tracking-[0.04em]
+      backdrop-blur-sm
+      "
+    >
+      +31 6 12345678
+    </div>
 
-            </a>
+  </a>
 
-            {/* WHATSAPP */}
-            <a
-              href="https://wa.me/31612345678"
-              target="_blank"
-              className="bg-white/10 border border-white/20 rounded-[2rem] p-8 text-center hover:bg-white/15 transition duration-300"
-            >
+  {/* WHATSAPP */}
+  <a
+    href="https://wa.me/31612345678"
+    target="_blank"
+    className="
+    w-full
+    max-w-[360px]
+    bg-white/10
+    border
+    border-white/20
+    rounded-[2.5rem]
+    p-8
+    text-center
+    backdrop-blur-md
+    hover:bg-white/15
+    hover:-translate-y-1
+    transition
+    duration-300
+    "
+  >
 
-              <div className="w-16 h-16 mx-auto rounded-full bg-white/15 flex items-center justify-center text-2xl mb-6">
-                <FaWhatsapp />
-              </div>
+    <div className="w-20 h-20 mx-auto rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-3xl mb-7">
+      <FaWhatsapp />
+    </div>
 
-              <h3 className="text-2xl font-light mb-3">
-                WhatsApp
-              </h3>
+    <h3 className="text-3xl font-light mb-4">
+      WhatsApp
+    </h3>
 
-              <p className="text-white/80 leading-7 mb-6">
-                Stuur eenvoudig een bericht via WhatsApp.
-              </p>
+    <p className="text-white/80 leading-8 mb-8">
+      Stuur eenvoudig een bericht via WhatsApp.
+    </p>
 
-              <span className="inline-block bg-white text-[#6F745C] px-6 py-3 rounded-full text-lg hover:scale-105 transition">
-                Stuur bericht
-              </span>
+    <div
+      className="
+      inline-flex
+      items-center
+      justify-center
+      px-7
+      py-3
+      rounded-full
+      border
+      border-white/30
+      bg-white/10
+      text-white
+      text-lg
+      tracking-[0.04em]
+      backdrop-blur-sm
+      "
+    >
+      Stuur bericht
+    </div>
 
-            </a>
+  </a>
 
-            {/* EMAIL */}
-            <a
-              href="mailto:info@petrapedicure.nl"
-              className="bg-white/10 border border-white/20 rounded-[2rem] p-8 text-center hover:bg-white/15 transition duration-300"
-            >
+  {/* EMAIL */}
+  <a
+    href="mailto:info@petrapedicure.nl"
+    className="
+    w-full
+    max-w-[360px]
+    bg-white/10
+    border
+    border-white/20
+    rounded-[2.5rem]
+    p-8
+    text-center
+    backdrop-blur-md
+    hover:bg-white/15
+    hover:-translate-y-1
+    transition
+    duration-300
+    "
+  >
 
-              <div className="w-16 h-16 mx-auto rounded-full bg-white/15 flex items-center justify-center text-2xl mb-6">
-                <FaEnvelope />
-              </div>
+    <div className="w-20 h-20 mx-auto rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-3xl mb-7">
+      <FaEnvelope />
+    </div>
 
-              <h3 className="text-2xl font-light mb-3">
-                E-mail
-              </h3>
+    <h3 className="text-3xl font-light mb-4">
+      E-mail
+    </h3>
 
-              <p className="text-white/80 leading-7 mb-6">
-                Mail gerust voor informatie of beschikbaarheid.
-              </p>
+    <p className="text-white/80 leading-8 mb-8">
+      Mail gerust voor informatie of beschikbaarheid.
+    </p>
 
-              <span className="inline-block bg-white text-[#6F745C] px-6 py-3 rounded-full text-lg hover:scale-105 transition">
-                info@petrapedicure.nl
-              </span>
+    <div
+      className="
+      inline-flex
+      items-center
+      justify-center
+      px-7
+      py-3
+      rounded-full
+      border
+      border-white/30
+      bg-white/10
+      text-white
+      text-lg
+      tracking-[0.04em]
+      backdrop-blur-sm
+      "
+    >
+      info@petrapedicure.nl
+    </div>
 
-            </a>
+  </a>
 
-          </div>
+</div>
 
         </div>
 

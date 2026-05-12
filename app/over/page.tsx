@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 import {
   FaFacebookF,
   FaInstagram,
@@ -7,6 +9,8 @@ import {
 } from "react-icons/fa";
 
 export default function OverPage() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <main className="bg-[#FCFAF8] text-[#6F745C] min-h-screen overflow-x-hidden">
 
@@ -34,6 +38,17 @@ export default function OverPage() {
 
           </a>
 
+          {/* MOBILE BUTTON */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden text-[#6F745C]"
+          >
+            <span className="text-4xl leading-none">
+              {menuOpen ? "✕" : "☰"}
+            </span>
+          </button>
+
+          {/* DESKTOP MENU */}
           <div className="hidden md:flex items-center gap-8 text-sm uppercase tracking-[0.15em] text-[#7F7F72]">
 
             <a href="/" className="hover:text-[#C1978D] transition">
@@ -61,6 +76,69 @@ export default function OverPage() {
         </div>
 
       </nav>
+
+      {/* MOBILE MENU */}
+      {menuOpen && (
+        <>
+          {/* OVERLAY */}
+          <div
+            onClick={() => setMenuOpen(false)}
+            className="fixed inset-0 bg-black/20 backdrop-blur-sm z-[9998]"
+          />
+
+          {/* MENU */}
+          <div
+            className="
+            md:hidden
+            fixed
+            top-[95px]
+            left-1/2
+            -translate-x-1/2
+            w-[92%]
+            bg-[#FCFAF8]/95
+            backdrop-blur-xl
+            border border-[#ECE6DF]
+            rounded-[2.7rem]
+            shadow-[0_25px_70px_rgba(0,0,0,0.08)]
+            z-[9999]
+            px-8
+            py-8
+            "
+          >
+
+            {/* NAV LINKS */}
+            <div className="flex flex-col">
+
+              {[
+                ["Home", "/"],
+                ["Behandelingen", "/behandelingen"],
+                ["Tarieven", "/tarieven"],
+                ["Over", "/over"],
+                ["Contact", "/contact"],
+              ].map(([title, link], index) => (
+                <a
+                  key={index}
+                  href={link as string}
+                  onClick={() => setMenuOpen(false)}
+                  className="
+                  py-7
+                  border-b
+                  border-[#EEE8E1]
+                  uppercase
+                  tracking-[0.22em]
+                  text-[15px]
+                  text-[#7F7F72]
+                  "
+                >
+                  {title}
+                </a>
+              ))}
+
+            </div>
+
+          </div>
+        </>
+      )}
 
       {/* CONTENT */}
       <section className="pt-[160px] pb-24 px-6 lg:px-20">
