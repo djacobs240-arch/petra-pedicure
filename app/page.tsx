@@ -152,13 +152,13 @@ export default function Home() {
       )}
 
       {/* HERO */}
-      <section className="relative min-h-[85vh] flex items-center px-6 lg:px-20 pt-[130px] pb-20 overflow-x-hidden bg-gradient-to-br from-[#F7F4F1] via-[#FCFAF8] to-[#EEF0E7]">
+      <section className="relative pt-[130px] pb-20 px-6 lg:px-20 overflow-hidden bg-gradient-to-br from-[#F7F4F1] via-[#FCFAF8] to-[#EEF0E7]">
 
         <div className="absolute top-[-120px] left-[-120px] w-[320px] h-[320px] bg-[#E7C7BF] opacity-30 blur-[20px] rounded-full"></div>
 
         <div className="absolute bottom-[-120px] right-[-120px] w-[320px] h-[320px] bg-[#DDE3D0] opacity-40 blur-[20px] rounded-full"></div>
 
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center w-full">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
           <div>
 
