@@ -1226,9 +1226,9 @@ Met vriendelijke groet,`
     </div>
 
     {/* LINKS */}
-    <div className="mt-6 flex items-center justify-center text-sm text-[#8A8A80]">
+    <div className="mt-6 flex justify-center">
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 text-sm text-[#8A8A80]">
 
         <a
           href="/annuleringsbeleid"
