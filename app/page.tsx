@@ -1227,23 +1227,27 @@ Met vriendelijke groet,`
     </div>
 
     {/* LINKS */}
-    <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 text-sm text-[#8A8A80] text-center">
+    <div className="mt-6 flex items-center justify-center text-sm text-[#8A8A80]">
 
-      <a
-        href="/annuleringsbeleid"
-        className="hover:text-[#C1978D] transition"
-      >
-        Annuleringsbeleid
-      </a>
+      <div className="flex items-center gap-4">
 
-      <span className="hidden sm:block">•</span>
+        <a
+          href="/annuleringsbeleid"
+          className="hover:text-[#C1978D] transition"
+        >
+          Annuleringsbeleid
+        </a>
 
-      <a
-        href="/voorwaarden"
-        className="hover:text-[#C1978D] transition"
-      >
-        Algemene voorwaarden
-      </a>
+        <span className="text-[#CFC7BF]">•</span>
+
+        <a
+          href="/voorwaarden"
+          className="hover:text-[#C1978D] transition"
+        >
+          Algemene voorwaarden
+        </a>
+
+      </div>
 
     </div>
 
@@ -1269,6 +1273,7 @@ Met vriendelijke groet,`
 
 </footer>
 ```
+
     </main>
   );
 }
