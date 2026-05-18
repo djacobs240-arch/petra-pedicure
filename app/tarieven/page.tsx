@@ -557,44 +557,58 @@ export default function Home() {
 </div>
 
 {/* VOORWAARDEN */}
-<div className="mt-20 bg-[#AEB49A] rounded-[3rem] p-10 lg:p-16 text-white shadow-2xl">
+<div className="mt-20 bg-white border border-[#EEE8E1] rounded-[3rem] p-10 lg:p-16 shadow-sm">
 
   <div className="max-w-4xl mx-auto text-center">
 
-    <p className="uppercase tracking-[0.3em] text-sm text-white/70 mb-4">
-      Voorwaarden & Annulering
+    <p className="uppercase tracking-[0.3em] text-sm text-[#C1978D] mb-4">
+      Belangrijke informatie
     </p>
 
-    <h2 className="text-4xl lg:text-5xl font-light mb-8">
-      Belangrijke informatie
+    <h2 className="text-4xl lg:text-5xl font-light mb-8 text-[#6F745C]">
+      Voorwaarden & Annulering
     </h2>
 
-    <p className="text-lg leading-9 text-white/90 mb-8">
-      Bij het maken van een afspraak gaat de klant automatisch akkoord
-      met het annuleringsbeleid en de algemene voorwaarden van Petra Pedicure.
+    <p className="text-lg leading-9 text-[#7F7F72] max-w-2xl mx-auto">
+      Bekijk hier onze algemene voorwaarden en het annuleringsbeleid.
+      Bij het maken van een afspraak ga je akkoord met deze voorwaarden.
     </p>
 
-    <div className="space-y-6 text-white/90 leading-8 text-left max-w-3xl mx-auto">
+    <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-5">
 
-      <p>
-        • Afspraken kunnen kosteloos worden geannuleerd of verplaatst
-        tot 24 uur van tevoren.
-      </p>
+      <a
+        href="/voorwaarden"
+        className="
+        px-8
+        py-4
+        rounded-full
+        bg-[#D9B0A7]
+        hover:bg-[#c89b91]
+        transition
+        text-white
+        text-lg
+        shadow-sm
+        "
+      >
+        Algemene voorwaarden
+      </a>
 
-      <p>
-        • Bij annulering binnen 24 uur of het niet verschijnen op de afspraak
-        kan een vergoeding in rekening worden gebracht.
-      </p>
-
-      <p>
-        • Petra Pedicure behoudt zich het recht voor om afspraken
-        te wijzigen bij overmacht of onvoorziene omstandigheden.
-      </p>
-
-      <p>
-        • Door een afspraak te boeken bevestigt de klant akkoord te gaan
-        met de algemene voorwaarden en het annuleringsbeleid.
-      </p>
+      <a
+        href="/annuleringsbeleid"
+        className="
+        px-8
+        py-4
+        rounded-full
+        border
+        border-[#B8B89E]
+        text-[#6F745C]
+        hover:bg-[#F7F4F1]
+        transition
+        text-lg
+        "
+      >
+        Annuleringsbeleid
+      </a>
 
     </div>
 
