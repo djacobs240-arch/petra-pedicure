@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import BookingModal from "@/app/components/BookingModal";
 
 import {
   FaFacebookF,
@@ -12,6 +13,7 @@ import {
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [selectedTreatment, setSelectedTreatment] = useState<string | null>(null);
 
   return (
     <main
@@ -210,7 +212,8 @@ export default function Home() {
       </div>
 
     </div>
-      </>
+
+  </>
 )}
 
 
@@ -235,6 +238,7 @@ export default function Home() {
               afgestemd op jouw wensen en comfort.
             </p>
 
+          </div>
           </div>
 
 {/* HOOFDBEHANDELINGEN */}
@@ -696,4 +700,3 @@ export default function Home() {
     </main>
   );
 }
-"
