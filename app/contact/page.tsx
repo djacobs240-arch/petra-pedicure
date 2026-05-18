@@ -39,7 +39,7 @@ export default function Home() {
 
   <span
     className="text-[24px] lg:text-4xl text-[#C1978D] font-light tracking-[0.03em]"
-    style={{ fontFamily: "var(--font-heading)" }}
+    style={{ fontFamily: "'Cormorant Garamond', serif" }}
   >
     Petra Pedicure
   </span>
@@ -60,7 +60,7 @@ export default function Home() {
           {/* DESKTOP MENU */}
           <div
   className="hidden md:flex items-center gap-8 text-sm uppercase tracking-[0.15em] text-[#7F7F72]"
-  style={{ fontFamily: "var(--font-heading)" }}
+  style={{ fontFamily: "'Cormorant Garamond', serif" }}
 >
 
             <a href="/" className="hover:text-[#C1978D] transition">
@@ -430,7 +430,7 @@ export default function Home() {
 
 <span
   className="text-[24px] lg:text-4xl text-[#C1978D] font-light tracking-[0.03em]"
-  style={{ fontFamily: "var(--font-heading)" }}
+  style={{ fontFamily: "'Cormorant Garamond', serif" }}
 >
   Petra Pedicure
 </span>
