@@ -276,61 +276,6 @@ export default function Home() {
 
       </section>
 
-      {/* BEHANDELINGEN */}
-      <section
-        id="behandelingen"
-        className="py-24 px-6 lg:px-20 bg-[#FCFAF8]"
-      >
-
-        <div className="max-w-6xl mx-auto text-center">
-
-          <p className="uppercase tracking-[0.3em] text-sm text-[#C1978D] mb-4">
-            Behandelingen
-          </p>
-
-          <h2 className="text-5xl font-light mb-16">
-            Verzorging met aandacht
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-8">
-
-            {[
-              {
-                icon: "🌿",
-                title: "Basis Pedicure",
-                text: "Nagels knippen, verzorgen van de huid en verwijderen van eelt.",
-              },
-              {
-                icon: "🤍",
-                title: "Medische Pedicure",
-                text: "Professionele behandeling voor gevoelige of probleemvoeten.",
-              },
-              {
-                icon: "✨",
-                title: "Wellness Behandeling",
-                text: "Extra ontspanning inclusief massage en verzorgende crème.",
-              },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-[2rem] p-10 border border-[#EEE8E1] shadow-md hover:shadow-2xl transition"
-              >
-
-                <div className="text-4xl mb-6">{item.icon}</div>
-
-                <h3 className="text-3xl mb-4">{item.title}</h3>
-
-                <p className="leading-8 text-[#7F7F72]">{item.text}</p>
-
-              </div>
-            ))}
-
-          </div>
-
-        </div>
-
-      </section>
-
       {/* BEHANDELING UITLEG */}
       <section className="py-24 px-6 lg:px-20 bg-[#F7F4F1]">
 
