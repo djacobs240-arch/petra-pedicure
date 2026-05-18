@@ -115,7 +115,7 @@ export default function Home() {
 
 {/* NAV LINKS */}
 <div className="flex flex-col">
-  {([
+  {[
     ["Behandelingen", "/behandelingen"],
     ["Tarieven", "/tarieven"],
     ["Over", "/over"],
@@ -137,7 +137,7 @@ export default function Home() {
     >
       {title}
     </a>
-  ))) as React.ReactNode}
+  ))}
 </div>
 
 {/* CONTACT INFO */}
