@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import BookingModal from "@/app/components/BookingModal";
 
 import {
   FaFacebookF,
@@ -13,7 +12,6 @@ import {
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [selectedTreatment, setSelectedTreatment] = useState<string | null>(null);
 
   return (
     <main
@@ -117,7 +115,7 @@ export default function Home() {
 
 {/* NAV LINKS */}
 <div className="flex flex-col">
-  {([
+  {[
     ["Behandelingen", "/behandelingen"],
     ["Tarieven", "/tarieven"],
     ["Over", "/over"],
@@ -139,7 +137,7 @@ export default function Home() {
     >
       {title}
     </a>
-  ))) as React.ReactNode}
+  ))}
 </div>
 
 {/* CONTACT INFO */}
@@ -212,8 +210,9 @@ export default function Home() {
       </div>
 
     </div>
-  </>
+      </>
 )}
+
 
       {/* CONTENT */}
       <section className="pt-[160px] pb-24 px-6 lg:px-20">
@@ -249,7 +248,6 @@ export default function Home() {
       <div className="flex flex-col sm:flex-row justify-between items-start gap-6 mb-8">
 
         <div>
-
           <h3 className="text-4xl font-light text-[#6F745C] mb-3">
             Pedicure Basis
           </h3>
@@ -257,11 +255,9 @@ export default function Home() {
           <p className="text-[#7F7F72]">
             30 – 45 minuten
           </p>
-
         </div>
 
         <div className="text-right">
-
           <p className="text-4xl text-[#C1978D] font-light">
             €50
           </p>
@@ -269,7 +265,6 @@ export default function Home() {
           <p className="text-sm text-[#7F7F72]">
             per persoon
           </p>
-
         </div>
 
       </div>
@@ -281,6 +276,7 @@ export default function Home() {
         <div>• Reinigen van de nagelomgeving</div>
         <div>• Verwijderen van eelt en likdoorns</div>
         <div>• Behandelen van kloven en drukplekken</div>
+        <div>• Verzorgen en gladmaken van de huid</div>
         <div>• Verzorgende crème</div>
 
       </div>
@@ -289,7 +285,7 @@ export default function Home() {
 
     <button
       onClick={() => setSelectedTreatment("Pedicure Basis")}
-      className="w-full bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white py-4 rounded-full text-lg shadow-md text-center block"
+      className="w-full bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white py-4 rounded-full text-lg shadow-md"
     >
       Maak afspraak
     </button>
@@ -308,7 +304,6 @@ export default function Home() {
       <div className="flex flex-col sm:flex-row justify-between items-start gap-6 mb-8">
 
         <div>
-
           <h3 className="text-4xl font-light text-[#6F745C] mb-3">
             Pedicure Deluxe
           </h3>
@@ -316,11 +311,9 @@ export default function Home() {
           <p className="text-[#7F7F72]">
             50 – 65 minuten
           </p>
-
         </div>
 
         <div className="text-right">
-
           <p className="text-4xl text-[#C1978D] font-light">
             €70
           </p>
@@ -328,7 +321,6 @@ export default function Home() {
           <p className="text-sm text-[#7F7F72]">
             per persoon
           </p>
-
         </div>
 
       </div>
@@ -336,8 +328,8 @@ export default function Home() {
       <div className="space-y-4 text-[#7F7F72] mb-10">
 
         <div>• Complete pedicurebehandeling</div>
-        <div>• Verwijderen van eelt & drukplekken</div>
-        <div>• Verzorgen van ruwe huid & kloven</div>
+        <div>• Verwijderen van eelt, likdoorns en drukplekken</div>
+        <div>• Verzorgen van kloven en ruwe huid</div>
         <div>• Scrubbehandeling</div>
         <div>• Ontspannende voet- en onderbeenmassage</div>
         <div>• Intensieve verzorging met voedende crème</div>
@@ -348,7 +340,109 @@ export default function Home() {
 
     <button
       onClick={() => setSelectedTreatment("Pedicure Deluxe")}
-      className="w-full bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white py-4 rounded-full text-lg shadow-md text-center block"
+      className="w-full bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white py-4 rounded-full text-lg shadow-md"
+    >
+      Maak afspraak
+    </button>
+
+  </div>
+
+  {/* SPA */}
+  <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] shadow-sm p-10 flex flex-col justify-between">
+
+    <div>
+
+      <div className="flex flex-col sm:flex-row justify-between items-start gap-6 mb-8">
+
+        <div>
+          <h3 className="text-4xl font-light text-[#6F745C] mb-3">
+            Spa Behandeling
+          </h3>
+
+          <p className="text-[#7F7F72]">
+            30 minuten
+          </p>
+        </div>
+
+        <div className="text-right">
+          <p className="text-4xl text-[#C1978D] font-light">
+            €40
+          </p>
+
+          <p className="text-sm text-[#7F7F72]">
+            per persoon
+          </p>
+        </div>
+
+      </div>
+
+      <div className="space-y-4 text-[#7F7F72] mb-10">
+
+        <div>• Warm voetbad met Dead Sea Salt Soak</div>
+        <div>• Sugar Scrub behandeling</div>
+        <div>• Moisture Mask & hydraterende verzorging</div>
+        <div>• Verzorging van voeten en onderbenen</div>
+        <div>• Ontspannende massage</div>
+        <div>• Natuurlijke ingrediënten zonder parabenen</div>
+
+      </div>
+
+    </div>
+
+    <button
+      onClick={() => setSelectedTreatment("Spa Behandeling")}
+      className="w-full bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white py-4 rounded-full text-lg shadow-md"
+    >
+      Maak afspraak
+    </button>
+
+  </div>
+
+  {/* COMBINATIE */}
+  <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] shadow-sm p-10 flex flex-col justify-between">
+
+    <div>
+
+      <div className="flex flex-col sm:flex-row justify-between items-start gap-6 mb-8">
+
+        <div>
+          <h3 className="text-4xl font-light text-[#6F745C] mb-3">
+            Spa + Pedicure
+          </h3>
+
+          <p className="text-[#7F7F72]">
+            60 minuten
+          </p>
+        </div>
+
+        <div className="text-right">
+          <p className="text-4xl text-[#C1978D] font-light">
+            €80
+          </p>
+
+          <p className="text-sm text-[#7F7F72]">
+            per persoon
+          </p>
+        </div>
+
+      </div>
+
+      <div className="space-y-4 text-[#7F7F72] mb-10">
+
+        <div>• Complete spa behandeling</div>
+        <div>• 30 minuten basis pedicure</div>
+        <div>• Verzorging van nagels en huid</div>
+        <div>• Verwijderen van eelt en drukplekken</div>
+        <div>• Ontspannende massage</div>
+        <div>• Stressverminderend & betere doorbloeding</div>
+
+      </div>
+
+    </div>
+
+    <button
+      onClick={() => setSelectedTreatment("Spa + Pedicure")}
+      className="w-full bg-[#D9B0A7] hover:bg-[#c89b91] transition text-white py-4 rounded-full text-lg shadow-md"
     >
       Maak afspraak
     </button>
@@ -357,7 +451,7 @@ export default function Home() {
 
 </div>
 
-{/* EXTRA TARIEVEN */}
+{/* EXTRA BEHANDELINGEN */}
 <div className="mt-20 bg-white border border-[#EEE8E1] rounded-[2.5rem] p-8 lg:p-14 shadow-sm">
 
   <div className="text-center mb-14">
@@ -375,11 +469,12 @@ export default function Home() {
   <div className="space-y-6">
 
     {[
-      ["Spa voetenbad", "€15"],
-      ["Voetmassage", "€20"],
-      ["Onderbeenmassage", "€25"],
-      ["Nagels lakken", "€15"],
-      ["French pedicure", "€20"],
+      ["Meerprijs per 15 minuten", "€20"],
+      ["Likdoorn verwijderen", "€25"],
+      ["Ingroeiende nagel behandelen", "€25"],
+      ["Kloof verwijderen", "€25"],
+      ["Eelt verwijderen", "€25"],
+      ["Onderbeen & voetmassage", "€20"],
     ].map(([title, price], index) => (
 
       <div
@@ -394,13 +489,112 @@ export default function Home() {
         <span className="text-2xl text-[#C1978D] font-light">
           {price}
         </span>
-        </div>
+
+      </div>
 
     ))}
 
   </div>
 
 </div>
+
+{/* INFO BLOKKEN */}
+<div className="grid lg:grid-cols-3 gap-8 mt-20">
+
+  {/* STAFFELKORTING */}
+  <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] p-10 shadow-sm">
+
+    <h3 className="text-3xl font-light mb-8 text-[#6F745C]">
+      Staffelkorting
+    </h3>
+
+    <div className="space-y-5 text-[#7F7F72] leading-8">
+
+      <p>• 1 klant — €50 p.p.</p>
+      <p>• 2–3 klanten op 1 locatie — €45 p.p.</p>
+      <p>• 4+ klanten op 1 locatie — €40 p.p.</p>
+
+    </div>
+
+  </div>
+
+  {/* TERUGKOMACTIE */}
+  <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] p-10 shadow-sm">
+
+    <h3 className="text-3xl font-light mb-8 text-[#6F745C]">
+      Terugkomactie
+    </h3>
+
+    <p className="text-[#7F7F72] leading-8">
+      Als dank voor het vertrouwen ontvangen vaste klanten
+      20% korting op de 8e afspraak.
+    </p>
+
+  </div>
+
+  {/* REISKOSTEN */}
+  <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] p-10 shadow-sm">
+
+    <h3 className="text-3xl font-light mb-8 text-[#6F745C]">
+      Kilometervergoeding
+    </h3>
+
+    <div className="space-y-5 text-[#7F7F72] leading-8">
+
+      <p>• Binnen 20 km inbegrepen</p>
+      <p>• Daarna €0,50 per kilometer</p>
+      <p>• Buiten Almere bespreekbaar</p>
+      <p>• Mogelijk bij meerdere personen op locatie</p>
+
+    </div>
+
+  </div>
+
+</div>
+
+{/* VOORWAARDEN */}
+<div className="mt-20 bg-[#AEB49A] rounded-[3rem] p-10 lg:p-16 text-white shadow-2xl">
+
+  <div className="max-w-4xl mx-auto text-center">
+
+    <p className="uppercase tracking-[0.3em] text-sm text-white/70 mb-4">
+      Voorwaarden & Annulering
+    </p>
+
+    <h2 className="text-4xl lg:text-5xl font-light mb-8">
+      Belangrijke informatie
+    </h2>
+
+    <p className="text-lg leading-9 text-white/90 mb-8">
+      Bij het maken van een afspraak gaat de klant automatisch akkoord
+      met het annuleringsbeleid en de algemene voorwaarden van Petra Pedicure.
+    </p>
+
+    <div className="space-y-6 text-white/90 leading-8 text-left max-w-3xl mx-auto">
+
+      <p>
+        • Afspraken kunnen kosteloos worden geannuleerd of verplaatst
+        tot 24 uur van tevoren.
+      </p>
+
+      <p>
+        • Bij annulering binnen 24 uur of het niet verschijnen op de afspraak
+        kan een vergoeding in rekening worden gebracht.
+      </p>
+
+      <p>
+        • Petra Pedicure behoudt zich het recht voor om afspraken
+        te wijzigen bij overmacht of onvoorziene omstandigheden.
+      </p>
+
+      <p>
+        • Door een afspraak te boeken bevestigt de klant akkoord te gaan
+        met de algemene voorwaarden en het annuleringsbeleid.
+      </p>
+
+    </div>
+
+  </div>
 
 </div>
 
@@ -502,3 +696,4 @@ export default function Home() {
     </main>
   );
 }
+"
