@@ -27,7 +27,7 @@ export default function Home() {
 
           {/* LOGO */}
 <a
-  href="#top"
+  href="/"
   onClick={() => setMenuOpen(false)}
   className="flex items-center gap-3"
 >
@@ -60,7 +60,7 @@ export default function Home() {
           {/* DESKTOP MENU */}
           <div className="hidden md:flex items-center gap-8 text-sm uppercase tracking-[0.15em] text-[#7F7F72]">
 
-            <a href="#top" className="hover:text-[#C1978D] transition">
+            <a href="/" className="hover:text-[#C1978D] transition">
               Home
             </a>
 
@@ -291,19 +291,21 @@ export default function Home() {
               </p>
 
               <span
-                className="
-                inline-block
-                bg-[#D9B0A7]
-                hover:bg-[#c89b91]
-                transition
-                text-white
-                px-7
-                py-3
-                rounded-full
-                text-lg
-                shadow-sm
-                "
-              >
+  className="
+  inline-block
+  bg-[#6F745C]
+  hover:bg-[#5f6450]
+  transition-all
+  duration-300
+  text-white
+  px-7
+  py-3
+  rounded-full
+  text-lg
+  shadow-md
+  hover:shadow-xl
+  "
+>
                 Bel direct
               </span>
 
@@ -341,18 +343,20 @@ export default function Home() {
               </p>
 
               <span
-                className="
-                inline-block
-                bg-[#D9B0A7]
-                hover:bg-[#c89b91]
-                transition
-                text-white
-                px-7
-                py-3
-                rounded-full
-                text-lg
-                shadow-sm
-                "
+  className="
+  inline-block
+  bg-[#6F745C]
+  hover:bg-[#5f6450]
+  transition-all
+  duration-300
+  text-white
+  px-7
+  py-3
+  rounded-full
+  text-lg
+  shadow-md
+  hover:shadow-xl
+  "
               >
                 WhatsApp
               </span>
@@ -390,18 +394,20 @@ export default function Home() {
               </p>
 
               <span
-                className="
-                inline-block
-                bg-[#D9B0A7]
-                hover:bg-[#c89b91]
-                transition
-                text-white
-                px-7
-                py-3
-                rounded-full
-                text-lg
-                shadow-sm
-                "
+  className="
+  inline-block
+  bg-[#6F745C]
+  hover:bg-[#5f6450]
+  transition-all
+  duration-300
+  text-white
+  px-7
+  py-3
+  rounded-full
+  text-lg
+  shadow-md
+  hover:shadow-xl
+  "
               >
                 Mail ons
               </span>

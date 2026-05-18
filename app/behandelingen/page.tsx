@@ -29,7 +29,7 @@ export default function Home() {
 
           {/* LOGO */}
 <a
-  href="#top"
+  href="/"
   onClick={() => setMenuOpen(false)}
   className="flex items-center gap-3"
 >
@@ -62,9 +62,9 @@ export default function Home() {
           {/* DESKTOP MENU */}
           <div className="hidden md:flex items-center gap-8 text-sm uppercase tracking-[0.15em] text-[#7F7F72]">
 
-            <a href="#top" className="hover:text-[#C1978D] transition">
-              Home
-            </a>
+<a href="/" className="hover:text-[#C1978D] transition">
+  Home
+</a>
 
             <a href="/behandelingen" className="hover:text-[#C1978D] transition">
               Behandelingen
@@ -276,31 +276,148 @@ export default function Home() {
 
       </section>
 
-      {/* BEHANDELING UITLEG */}
-      <section className="pb-24 px-6 lg:px-20 bg-[#F7F4F1]">
+{/* BEHANDELING UITLEG */}
+<section className="pt-10 pb-28 px-6 lg:px-20 bg-[#F7F4F1]">
 
-        <div className="max-w-5xl mx-auto">
+  <div className="max-w-6xl mx-auto">
 
-          {/* TITEL */}
-          <div className="text-center mb-16">
+    {/* TITEL */}
+    <div className="text-center mb-20">
 
-            <p className="uppercase tracking-[0.3em] text-sm text-[#C1978D] mb-4">
-              Professionele voetverzorging
+      <p className="uppercase tracking-[0.3em] text-sm text-[#C1978D] mb-5">
+        Professionele voetverzorging
+      </p>
+
+      <h2 className="text-5xl lg:text-6xl font-light mb-10 leading-tight">
+        Verzorging in jouw vertrouwde omgeving
+      </h2>
+
+      <p className="text-xl leading-10 text-[#7F7F72] max-w-4xl mx-auto">
+        Gun jezelf een moment van ontspanning en verzorging
+        met een professionele pedicurebehandeling aan huis.
+      </p>
+
+    </div>
+
+    {/* CONTENT */}
+    <div className="
+      bg-white
+      rounded-[3rem]
+      border
+      border-[#EEE8E1]
+      shadow-md
+      hover:shadow-2xl
+      transition-all
+      duration-300
+      p-10
+      lg:p-16
+    ">
+
+      <div className="max-w-4xl mx-auto">
+
+        <div className="space-y-10 text-lg leading-10 text-[#7F7F72]">
+
+          <p>
+            In de drukte van het dagelijkse leven wordt goede voetverzorging
+            vaak vergeten, terwijl gezonde en verzorgde voeten juist zo belangrijk zijn.
+          </p>
+
+          <p>
+            Ik maak gebruik van nattechniek met machine waarbij een verkoelende
+            spray of nevel van water en vloeistof wordt toegepast. Hierdoor blijven
+            huid en nagels gekoeld en ontstaat er minder stof tijdens de behandeling.
+          </p>
+
+          <p>
+            Tijdens de behandeling worden je voeten eerst zorgvuldig gereinigd
+            en gedesinfecteerd voor een frisse en hygiënische start.
+            Vervolgens worden de nagels vakkundig geknipt en gefreesd,
+            zodat ze weer netjes en verzorgd uitzien.
+          </p>
+
+          <p>
+            Eelt wordt op een veilige en effectieve manier verwijderd,
+            waardoor je voeten weer zacht en comfortabel aanvoelen.
+            Ook de nagelomgeving krijgt de nodige aandacht en verzorging
+            om problemen te voorkomen en de gezondheid van je voeten te ondersteunen.
+          </p>
+
+          {/* PROBLEMEN */}
+          <div className="
+            bg-[#FCFAF8]
+            rounded-[2rem]
+            border
+            border-[#EEE8E1]
+            p-8
+          ">
+
+            <h3 className="text-3xl font-light text-[#6F745C] mb-8">
+              Indien nodig worden deskundig behandeld:
+            </h3>
+
+            <div className="grid sm:grid-cols-2 gap-5 text-[#7F7F72]">
+
+              <div>• Ingroeiende nagels</div>
+              <div>• Kloven</div>
+              <div>• Eelt</div>
+              <div>• Kalknagels</div>
+              <div>• Likdoorns</div>
+
+            </div>
+
+          </div>
+
+          <p>
+            Je kunt kiezen uit een basisbehandeling of een luxebehandeling,
+            speciaal voor voeten die extra aandacht nodig hebben of wanneer
+            je jezelf wilt verwennen met een moment van pure ontspanning.
+          </p>
+
+          <p>
+            Daarnaast kun je de behandeling uitbreiden met een heerlijk
+            geurende spa voetenbad behandeling met de verzorgende,
+            parabenenvrije BCL-lijn of kiezen voor een ontspannende
+            voeten- en onderbeenmassage.
+          </p>
+
+          <p>
+            De behandeling wordt afgesloten met een voedende crème
+            die de huid hydrateert en je voeten heerlijk laat ontspannen.
+          </p>
+
+          {/* SLOT */}
+          <div className="
+            text-center
+            pt-10
+            border-t
+            border-[#EEE8E1]
+          ">
+
+            <p className="text-2xl lg:text-3xl font-light text-[#6F745C] leading-relaxed">
+              Je loopt weer weg op lichte,
+              verzorgde en gezonde voeten.
             </p>
 
-            <h2 className="text-5xl font-light mb-8">
-              Verzorging in jouw vertrouwde omgeving
-            </h2>
+            <p className="mt-10 text-[#7F7F72]">
+              Ik kijk ernaar uit om je te mogen verwelkomen.
+            </p>
 
-            <p className="text-lg leading-9 text-[#7F7F72] max-w-3xl mx-auto">
-              Gun jezelf een moment van ontspanning en professionele verzorging
-              met een pedicurebehandeling aan huis.
+            <p className="mt-4 text-2xl text-[#C1978D] font-light">
+              Liefs,<br />
+              Petra
             </p>
 
           </div>
 
-          </div>
-      </section>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* FOOTER */}
       <footer className="border-t border-[#E5DDD5] bg-[#FCFAF8] py-14 px-6 lg:px-20">

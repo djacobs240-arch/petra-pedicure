@@ -26,7 +26,7 @@ export default function Home() {
 
           {/* LOGO */}
 <a
-  href="#top"
+  href="/"
   onClick={() => setMenuOpen(false)}
   className="flex items-center gap-3"
 >
@@ -59,9 +59,9 @@ export default function Home() {
           {/* DESKTOP MENU */}
           <div className="hidden md:flex items-center gap-8 text-sm uppercase tracking-[0.15em] text-[#7F7F72]">
 
-            <a href="#top" className="hover:text-[#C1978D] transition">
-              Home
-            </a>
+<a href="/" className="hover:text-[#C1978D] transition">
+  Home
+</a>
 
             <a href="/behandelingen" className="hover:text-[#C1978D] transition">
               Behandelingen

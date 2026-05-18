@@ -28,7 +28,7 @@ export default function Home() {
 
           {/* LOGO */}
 <a
-  href="#top"
+  href="/"
   onClick={() => setMenuOpen(false)}
   className="flex items-center gap-3"
 >
@@ -61,9 +61,9 @@ export default function Home() {
           {/* DESKTOP MENU */}
           <div className="hidden md:flex items-center gap-8 text-sm uppercase tracking-[0.15em] text-[#7F7F72]">
 
-            <a href="#top" className="hover:text-[#C1978D] transition">
-              Home
-            </a>
+<a href="/" className="hover:text-[#C1978D] transition">
+  Home
+</a>
 
             <a href="/behandelingen" className="hover:text-[#C1978D] transition">
               Behandelingen
@@ -245,7 +245,23 @@ export default function Home() {
 <div className="grid lg:grid-cols-2 gap-8">
 
   {/* BASIS */}
-  <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] shadow-sm p-10 flex flex-col justify-between">
+  <div className="
+bg-white
+rounded-[2.5rem]
+border
+border-[#EEE8E1]
+shadow-md
+hover:shadow-2xl
+hover:-translate-y-1
+hover:border-[#D9B0A7]
+hover:bg-[#FFFCFA]
+transition-all
+duration-300
+p-10
+flex
+flex-col
+justify-between
+">
 
     <div>
 
@@ -297,8 +313,25 @@ export default function Home() {
   </div>
 
   {/* DELUXE */}
-  <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] shadow-sm p-10 relative overflow-hidden flex flex-col justify-between">
-
+<div className="
+relative
+overflow-hidden
+bg-white
+rounded-[2.5rem]
+border
+border-[#EEE8E1]
+shadow-md
+hover:shadow-2xl
+hover:-translate-y-1
+hover:border-[#D9B0A7]
+hover:bg-[#FFFCFA]
+transition-all
+duration-300
+p-10
+flex
+flex-col
+justify-between
+">
     <div>
 
       <div className="absolute top-0 right-0 bg-[#D9B0A7] text-white px-6 py-2 rounded-bl-[1.5rem] text-sm uppercase tracking-[0.15em]">
@@ -352,7 +385,23 @@ export default function Home() {
   </div>
 
   {/* SPA */}
-  <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] shadow-sm p-10 flex flex-col justify-between">
+  <div className="
+bg-white
+rounded-[2.5rem]
+border
+border-[#EEE8E1]
+shadow-md
+hover:shadow-2xl
+hover:-translate-y-1
+hover:border-[#D9B0A7]
+hover:bg-[#FFFCFA]
+transition-all
+duration-300
+p-10
+flex
+flex-col
+justify-between
+">
 
     <div>
 
@@ -403,7 +452,23 @@ export default function Home() {
   </div>
 
   {/* COMBINATIE */}
-  <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] shadow-sm p-10 flex flex-col justify-between">
+  <div className="
+bg-white
+rounded-[2.5rem]
+border
+border-[#EEE8E1]
+shadow-md
+hover:shadow-2xl
+hover:-translate-y-1
+hover:border-[#D9B0A7]
+hover:bg-[#FFFCFA]
+transition-all
+duration-300
+p-10
+flex
+flex-col
+justify-between
+">
 
     <div>
 
@@ -456,7 +521,21 @@ export default function Home() {
 </div>
 
 {/* EXTRA BEHANDELINGEN */}
-<div className="mt-20 bg-white border border-[#EEE8E1] rounded-[2.5rem] p-8 lg:p-14 shadow-sm">
+<div className="
+mt-20
+bg-white
+border
+border-[#EEE8E1]
+rounded-[2.5rem]
+p-8
+lg:p-14
+shadow-md
+hover:shadow-2xl
+hover:border-[#D9B0A7]
+hover:bg-[#FFFCFA]
+transition-all
+duration-300
+">
 
   <div className="text-center mb-14">
 
@@ -506,7 +585,20 @@ export default function Home() {
 <div className="grid lg:grid-cols-3 gap-8 mt-20">
 
   {/* STAFFELKORTING */}
-  <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] p-10 shadow-sm">
+  <div className="
+bg-white
+rounded-[2.5rem]
+border
+border-[#EEE8E1]
+p-10
+shadow-md
+hover:shadow-2xl
+hover:-translate-y-1
+hover:border-[#D9B0A7]
+hover:bg-[#FFFCFA]
+transition-all
+duration-300
+">
 
     <h3 className="text-3xl font-light mb-8 text-[#6F745C]">
       Staffelkorting
@@ -523,7 +615,20 @@ export default function Home() {
   </div>
 
   {/* TERUGKOMACTIE */}
-  <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] p-10 shadow-sm">
+  <div className="
+bg-white
+rounded-[2.5rem]
+border
+border-[#EEE8E1]
+p-10
+shadow-md
+hover:shadow-2xl
+hover:-translate-y-1
+hover:border-[#D9B0A7]
+hover:bg-[#FFFCFA]
+transition-all
+duration-300
+">
 
     <h3 className="text-3xl font-light mb-8 text-[#6F745C]">
       Terugkomactie
@@ -537,7 +642,20 @@ export default function Home() {
   </div>
 
   {/* REISKOSTEN */}
-  <div className="bg-white rounded-[2.5rem] border border-[#EEE8E1] p-10 shadow-sm">
+  <div className="
+bg-white
+rounded-[2.5rem]
+border
+border-[#EEE8E1]
+p-10
+shadow-md
+hover:shadow-2xl
+hover:-translate-y-1
+hover:border-[#D9B0A7]
+hover:bg-[#FFFCFA]
+transition-all
+duration-300
+">
 
     <h3 className="text-3xl font-light mb-8 text-[#6F745C]">
       Kilometervergoeding
@@ -557,7 +675,21 @@ export default function Home() {
 </div>
 
 {/* VOORWAARDEN */}
-<div className="mt-20 bg-white border border-[#EEE8E1] rounded-[3rem] p-10 lg:p-16 shadow-sm">
+<div className="
+mt-20
+bg-white
+border
+border-[#EEE8E1]
+rounded-[3rem]
+p-10
+lg:p-16
+shadow-md
+hover:shadow-2xl
+hover:border-[#D9B0A7]
+hover:bg-[#FFFCFA]
+transition-all
+duration-300
+">
 
   <div className="max-w-4xl mx-auto text-center">
 
